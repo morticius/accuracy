@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "9261ba0a-cfff-4a66-ad73-c265a2fe9a65",
+		"name": "Test Genesis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BTC Rate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndlcnRvbjEyMUB1a3IubmV0IiwiZXhwIjoxNjI0OTkzNzIwLCJpYXQiOjE2MjQ4MjA5MjAsImlzcyI6IkFjY3VyYWN5In0.96H8qOWu9hvJR3fxaw1l42PCJV57I5SqdssWmk5jP3Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/btcRate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"btcRate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "werton121@ukr.net",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123q",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "werton121@ukr.net",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123q",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
